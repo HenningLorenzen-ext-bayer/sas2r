@@ -1,0 +1,25 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/rocker-org/devcontainer-features/r-rig:1": {
+			"installRMarkdown": true,
+			"installRadian": true,
+			"installVscDebugger": true,
+			"version": "4.0.5",
+			"pakVersion": "auto",
+			"vscodeRSupport": "full",
+			"pandocVersion": "latest"
+		},
+		"ghcr.io/rocker-org/devcontainer-features/r-packages:1": {
+			"packages" : "languageserver,httpgd"
+		},
+		"ghcr.io/devcontainers/features/github-cli:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"DavidAnson.vscode-markdownlint"
+			]
+		}
+	}
+}
